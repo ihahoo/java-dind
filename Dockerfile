@@ -1,3 +1,3 @@
-FROM openjdk:8-alpine3.9
+FROM openjdk:8-alpine
 
-RUN apk add --update docker py-pip openssh-client make && pip install docker-compose
+RUN apk add --update docker py-pip openssh-client make && pip install docker-compose==1.25.0
